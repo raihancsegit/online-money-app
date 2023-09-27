@@ -42,21 +42,21 @@
 
         // Get the current date and time
         const currentDate = new Date().toLocaleDateString();
-        const currentTime = new Date().toLocaleTimeString();
+        const currentTime = new Date().toLocaleTimeString("en-US");
         // Create portfolio content with HTML and CSS
         const portfolioContent = `
                   <link rel="stylesheet" href="css/style.css">
                   <div>
-                    <p><strong>Date:</strong> ${currentDate} Time:${currentTime}</p>
+                    <p class="dateTime"><strong>Date:</strong> ${currentDate} Time:${currentTime}</p>
                     <ul class="checkbox-list">
                       <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">Website Name Online Money Marketing</span></label></li>
                       <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">Name: ${name}</span></label></li>
                       <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">Id Number: ${id}</span> </label></li>
-                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">Pay To Payment Option Support Bikash/Nogod/Rocket</span></label></li>
+                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">Support Bikash/Nogod/Rocket</span></label></li>
                     </ul>
                     <div class="card">
                       <div style="margin-bottom: 30px;">
-                          <div style="background: #3e79ec;display: inline;padding: 10px;border-radius: 10px;color: #fff;">Online Money Marketing Import Export</div>
+                          <div class="onlineM" style="background: #3e79ec;display: inline;padding: 10px;border-radius: 10px;color: #fff;">Online Money Marketing Import Export</div>
                         </div>
                        <div class="first">
                           <div>Name : ${name}</div>
