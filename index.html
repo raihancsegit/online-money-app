@@ -73,8 +73,8 @@
                        
                     </div>
                     <ul class="checkbox-list">
-                      <li><img src="/img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">Online Money Marketing</span></label></li>
-                      <li><img src="/img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">${description}</span></label></li>
+                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">Online Money Marketing</span></label></li>
+                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff">${description}</span></label></li>
                       <li>
                   </div>
 
@@ -106,7 +106,16 @@
             const downloadLink = document.createElement("a");
             downloadLink.href = image;
             downloadLink.download = "portfolio.png";
-            downloadLink.click();
+            // Check if the user is on a mobile device
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(
+              navigator.userAgent
+            );
+            if (isMobile) {
+              // For mobile devices, open the image in a new tab instead of triggering a download
+              downloadLink.target = "_blank";
+            } else {
+              downloadLink.click();
+            }
           },
         });
       }
