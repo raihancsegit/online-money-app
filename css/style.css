@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+#portfolio-preview {
+  background-color: #023a7d;
+  color: #fff;
+  padding: 10px;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-section {
+  background-color: #ffffff;
+  padding: 20px 40px 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-section input,
+.input-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.input-section button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input-section button:hover {
+  background-color: #0056b3;
+}
+
+.output-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#portfolio-preview {
+  text-align: center;
+}
+
+#portfolio-preview img {
+  width: 30px;
+  height: auto;
+}
+/* Reset default list styles */
+ul.checkbox-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style checkbox container */
+ul.checkbox-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust spacing between items */
+}
+
+/* Style checkbox input */
+ul.checkbox-list li input[type="checkbox"] {
+  margin-right: 10px; /* Adjust spacing between checkbox and label */
+}
+
+/* Style label for checkbox */
+ul.checkbox-list li label {
+  font-size: 16px;
+  color: #333; /* Adjust label text color */
+  margin-left: 5px;
+}
+
+/* Style checked checkbox */
+ul.checkbox-list li input[type="checkbox"]:checked + label {
+  text-decoration: line-through; /* Strike through text for checked items */
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  background: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
