@@ -19,6 +19,9 @@
         <label for="amount">Amount:</label>
         <input type="number" id="amount" placeholder="Enter amount" />
 
+        <label for="amount">Payment Method:</label>
+        <input type="text" id="payment" placeholder="Enter payment method" />
+
         <label for="description">Description:</label>
         <textarea id="description" placeholder="Enter description"></textarea>
 
@@ -38,6 +41,7 @@
         const name = document.getElementById("name").value;
         const amount = document.getElementById("amount").value;
         const id = document.getElementById("id").value;
+        const payment = document.getElementById("payment").value;
         const description = document.getElementById("description").value;
 
         // Get the current date and time
@@ -52,7 +56,7 @@
                       <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff; font-size:12px">Website Name Online Money Marketing</span></label></li>
                       <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff;font-size:12px">Name: ${name}</span></label></li>
                       <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff;font-size:12px">Id Number: ${id}</span> </label></li>
-                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff;font-size:12px">Support Bikash/Nogod/Rocket</span></label></li>
+                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff;font-size:12px">Support Bikash/Nagad/Rocket</span></label></li>
                     </ul>
                     <div class="card">
                       <div style="margin-bottom: 30px;">
@@ -67,14 +71,14 @@
                           <div style="font-size:10px">Id Number: ${id} </div>
                         </div>
                         <div class="first">
-                          <div style="text-align: left;font-size:10px">Payment: Bikash</div>
+                          <div style="text-align: left;font-size:10px">Payment: ${payment}</div>
                           <div style="font-size:10px">Pay: Cash</div>
                         </div>
                        
                     </div>
                     <ul class="checkbox-list">
-                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff;font-size:12px">Online Money Marketing</span></label></li>
-                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#fff;font-size:12px">${description}</span></label></li>
+                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:#e45610;font-size:12px">Online Money Marketing</span></label></li>
+                      <li><img src="img/check2.webp" alt="Checked"><label for="checkbox1"><span style="color:red;font-size:12px">${description}</span></label></li>
                       <li>
                   </div>
 
